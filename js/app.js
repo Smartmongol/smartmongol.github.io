@@ -1,12 +1,24 @@
-var app = angular.module('smartmongol', ['ngRoute', 'ngMaterial']);
-app.config(function($routeProvider) {
-	$routeProvider
-	.when('/', {
-		templateUrl:'view/main.html',
-		controller:'mainCtrl'
-	});
-});
-
-app.controller('mainCtrl', function($scope){
-	console.log('mainCtrl');
+var app = angular.module('smartmongol', ['ui.router', 'ngMaterial']);
+app.config(function($stateProvider, $urlRouterProvider) {
+	$urlRouterProvider.otherwise("/home");
+	$stateProvider
+	    .state('home', {
+	      url: "/home",
+	      templateUrl: "view/home.html",
+	      controller:"homeCtrl"
+	    })
+	    .state('members	', {
+	      url: "/members",
+	      templateUrl: "view/members.html"
+	    })
+	    .state('projects', {
+	      url: "/projects",
+	      templateUrl: "view/projetcs.html",
+	      controller: "projectsCtrl"
+	    })
+	    .state('contact', {
+	      url: "/contact",
+	      templateUrl: "view/contact.html",
+	      controller: "contactCtrl"
+	    });
 });
