@@ -7,13 +7,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	      templateUrl: "view/home.html",
 	      controller:"homeCtrl"
 	    })
-	    .state('members	', {
+	    .state('members', {
 	      url: "/members",
 	      templateUrl: "view/members.html"
 	    })
 	    .state('projects', {
 	      url: "/projects",
-	      templateUrl: "view/projetcs.html",
+	      templateUrl: "view/projects.html",
 	      controller: "projectsCtrl"
 	    })
 	    .state('contact', {
