@@ -1,28 +1,55 @@
 <div class="md-padding">
-	<div>
-		<div>
-			<h2>We want:</h2>
-    		<p style="color:black;" layout="column" flex="40">
-  			Мэдээлэл технологи гэдэг үгээр овоглох болсондоо бид баяртай байдаг. Ижил хүсэл зорилгоор нэгдэн багаар ажиллаж, мэдлэг чадвараа харилцан солилцож, түүгээр ч зогсохгүй хамтдаа бүтээлчээр ажиллан Монгол улсынхаа мэдээлэл технологийн хөгжилд өөрсдийн хувь нэмрийг оруулах гэсэн эрхэм сэтгэл өвөртлөн энэхүү багийг байгуулсан билээ. Анх 2011 оноос үйл ажиллагаагаа эхэлсэн бөгөөд одоогоор 4 гишүүнтэй үйл ажиллагаагаа явуулж байна.</p>
-    	</div> 
-      	<div>
-  		 	<div>
-			  <div>
-			    <md-input-container>
-			      <label>Name</label>
-			      <input ng-model="user.title">
-			    </md-input-container>
-			    <md-input-container>
-			      <label>Email</label>
-			      <input ng-model="user.email" type="email">
-			    </md-input-container>
-			    <md-input-container>
-			      <label>Phone</label>
-			      <input ng-model="user.phone" type="email">
-			    </md-input-container>
-			    <md-button class="md-raised md-primary">Send</md-button>
-			  </div>
+	<div layout="row">
+		<div flex>
+			<div layout="column" flex>
+	    		<md-list>
+				  <md-list-item class="md-3-line" >
+				  	<md-icon md-svg-icon="img/phone.svg"></md-icon>
+				    <div class="md-list-item-text">
+				      <h3>Phone</h3>
+				      <h4>(+82)-10-9372-9007</h4>
+				    </div>
+				  </md-list-item>
+				  <md-list-item class="md-3-line" >
+				  	<md-icon md-svg-icon="img/email.svg"></md-icon>
+				    <div class="md-list-item-text">
+				      <h3>Email</h3>
+				      <h4>smartmongolian@gmail.com</h4>
+				    </div>
+				  </md-list-item>
+				  <md-list-item class="md-3-line" >
+				  	<md-icon md-svg-icon="img/github.svg"></md-icon>
+				    <div class="md-list-item-text">
+				      <h3>Github</h3>
+				      <h4>htttp://github.com/Smartmongol</h4>
+				    </div>
+				  </md-list-item>
+				</md-list>
+	    	</div>
+		</div>
+    	<div layout="column" flex>
+    		<div flex="30">
+				<md-card class="md-whiteframe-z2">
+			      	<md-card-content>
+				      	<div>
+						    <md-input-container>
+						      <label>Name</label>
+						      <input ng-model="user.title">
+						    </md-input-container>
+						    <md-input-container>
+						      <label>Email</label>
+						      <input ng-model="user.email" type="email">
+						    </md-input-container>
+						    <md-input-container>
+						      <label>Phone</label>
+						      <input ng-model="user.phone" type="email">
+						    </md-input-container>
+						    <md-button class="md-raised md-primary">Send</md-button>
+						</div>
+		      		</md-card-content>
+		    	</md-card>
 			</div>
-      	</div>
+    	</div>
 	</div>
 </div>
+<div id="googleMap" style="width:100%;height:200px;"></div>
