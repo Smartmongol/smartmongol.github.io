@@ -1,3 +1,3 @@
-app.controller('projectsCtrl', ['', function($scope){
+app.controller('projectsCtrl', function($scope){
 	console.log("projectsCtrl");
-}]);
+});

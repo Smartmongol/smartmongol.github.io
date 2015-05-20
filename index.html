@@ -18,7 +18,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body layout="row">
-	<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z3" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+	<!-- <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z3" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
       	<md-toolbar class="md-tall md-hue-8">
         	<span flex></span>
         	<div layout="column" class="md-toolbar-tools-bottom inset">
@@ -36,13 +37,14 @@
 		    <p>Contact us</p>
 		  </md-list-item>
 		</md-list>
-    </md-sidenav>
+    </md-sidenav> -->
 	<div layout="column" layout-fill>
 	  <md-toolbar md-is-locked-open="$mdMedia('gt-md')">
 	    <div class="md-toolbar-tools">
-		    <md-button ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
-	            <ng-md-icon icon="menu"></ng-md-icon>
-	        </md-button>
+	    	<md-button ui-sref='home'>
+	    		Smartmongol
+	    	</md-button>
+		    
 			<span flex></span>
 			<md-button ui-sref='members'>Members</md-button>
 			<md-button ui-sref='projects'>Projects</md-button>

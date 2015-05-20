@@ -1,44 +1,28 @@
-<md-content class="md-padding">
+<div class="md-padding">
 	<div>
-		<div layout="column">
-			<h2>Our Team:</h2>
+		<div>
+			<h2>We want:</h2>
     		<p style="color:black;" layout="column" flex="40">
   			Мэдээлэл технологи гэдэг үгээр овоглох болсондоо бид баяртай байдаг. Ижил хүсэл зорилгоор нэгдэн багаар ажиллаж, мэдлэг чадвараа харилцан солилцож, түүгээр ч зогсохгүй хамтдаа бүтээлчээр ажиллан Монгол улсынхаа мэдээлэл технологийн хөгжилд өөрсдийн хувь нэмрийг оруулах гэсэн эрхэм сэтгэл өвөртлөн энэхүү багийг байгуулсан билээ. Анх 2011 оноос үйл ажиллагаагаа эхэлсэн бөгөөд одоогоор 4 гишүүнтэй үйл ажиллагаагаа явуулж байна.</p>
     	</div> 
-    	<div layout="row" layout-sm="row" layout-align="center center">
-    		<div layout="column" flex>
-      		<md-grid-list
-		        md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
-		        md-row-height-gt-md="1:1" md-row-height="2:2"
-		        md-gutter="20px" md-gutter-gt-sm="8px"
-		        md-gutter-sm="8px" >
-			    <md-grid-tile class="green">
-			      <md-grid-tile-footer>
-			        <h3>Ganzorig Gankhuyag</h3>
-			        <h3>Video Analyzer</h3>
-			      </md-grid-tile-footer>
-			    </md-grid-tile>
-			    <md-grid-tile class="purple">
-			      <md-grid-tile-footer>
-			        <h3>Erdenebayar Chinbat</h3>
-			        <h3>Data Analyzer</h3>
-			      </md-grid-tile-footer>
-			    </md-grid-tile>
-			    <md-grid-tile class="blue">
-			      <md-grid-tile-footer>
-			        <h3>Enkhtaivan Gansukh</h3>
-			        <h3>Web Analyzer</h3>
-			      </md-grid-tile-footer>
-			    </md-grid-tile>
-			    <md-grid-tile class="yellow">
-			      <md-grid-tile-footer>
-			        <h3>Enkhjargal Gansukh</h3>
-			        <h3>Mobile Analyzer</h3>
-			      </md-grid-tile-footer>
-			    </md-grid-tile>
-			</md-grid-list>
+      	<div>
+  		 	<div>
+			  <div>
+			    <md-input-container>
+			      <label>Name</label>
+			      <input ng-model="user.title">
+			    </md-input-container>
+			    <md-input-container>
+			      <label>Email</label>
+			      <input ng-model="user.email" type="email">
+			    </md-input-container>
+			    <md-input-container>
+			      <label>Phone</label>
+			      <input ng-model="user.phone" type="email">
+			    </md-input-container>
+			    <md-button class="md-raised md-primary">Send</md-button>
+			  </div>
+			</div>
       	</div>
-    	</div>
-      	
 	</div>
-</md-content>
+</div>
