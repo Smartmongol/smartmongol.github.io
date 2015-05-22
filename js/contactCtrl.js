@@ -16,4 +16,14 @@ app.controller('contactCtrl', function($scope){
 	  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
+
+	$scope.sendEmail = function(){
+		console.log($scope.user);
+		if(!$scope.user.email){
+			alert("Please insert email correctly!!!");
+		}
+		if(!$scope.user.phone){
+			alert("Please insert phone correctly!!!");
+		}
+	}
 });

@@ -44,19 +44,18 @@
 	  <md-toolbar md-is-locked-open="$mdMedia('gt-md')" style="background-color:#3498db;" class="md-whiteframe-z2">
 	    <div class="md-toolbar-tools">
 	    	<md-button ui-sref='home' layout-align="center center">
-	    		<div width="70px">
-	    			<img src="img/smartmongol-logo.png" width="80px">
+	    		<div width="90px">
+	    			<img src="img/smartmongol-logo.png" width="80px" style="padding-top:10px;">
 	    		</div>
 	    		
 	    	</md-button>
-		    
 			<span flex></span>
 			<md-button ui-sref='members'>Members</md-button>
 			<md-button ui-sref='projects'>Projects</md-button>
 			<md-button ui-sref='contact'>Contact us</md-button>
 	    </div>
 	  </md-toolbar>
-	  <md-content layout-padding>
+	  <md-content layout-padding flex>
 	    <div ui-view></div>
 	  </md-content>
 	</div>
@@ -66,6 +65,7 @@
 	<script src="js/membersCtrl.js"></script>
 	<script src="js/projectsCtrl.js"></script>
 	<script src="js/contactCtrl.js"></script>
+	<script src="lib/typewrite-directive.js"></script>
 	
 </body>
 </html>
