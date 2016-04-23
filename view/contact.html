@@ -1,55 +1,40 @@
-<div class="md-padding">
-	<div layout="row" layout-md="column" layout-sm="column">
-		<div flex>
-			<div layout="column">
-	    		<md-list>
-				  <md-list-item class="md-3-line" >
-				  	<md-icon md-svg-icon="img/phone.svg"></md-icon>
-				    <div class="md-list-item-text">
-				      <h3>Phone</h3>
-				      <h4>(+82)-10-9372-9007</h4>
-				    </div>
-				  </md-list-item>
-				  <md-list-item class="md-3-line" >
-				  	<md-icon md-svg-icon="img/email.svg"></md-icon>
-				    <div class="md-list-item-text">
-				      <h3>Email</h3>
-				      <h4>smartmongolian@gmail.com</h4>
-				    </div>
-				  </md-list-item>
-				  <md-list-item class="md-3-line" >
-				  	<md-icon md-svg-icon="img/github.svg"></md-icon>
-				    <div class="md-list-item-text">
-				      <h3>Github</h3>
-				      <h4>htttp://github.com/Smartmongol</h4>
-				    </div>
-				  </md-list-item>
-				</md-list>
-	    	</div>
-		</div>
-    	<div layout="column" flex>
-    		<div flex="30">
-				<md-card class="md-whiteframe-z2">
-			      	<md-card-content>
-				      	<div>
-						    <md-input-container>
-						      <label>Name</label>
-						      <input ng-model="user.name">
-						    </md-input-container>
-						    <md-input-container>
-						      <label>Email</label>
-						      <input ng-model="user.email" type="email">
-						    </md-input-container>
-						    <md-input-container>
-						      <label>Phone</label>
-						      <input ng-model="user.phone" type="number">
-						    </md-input-container>
-						    <md-button class="md-raised md-primary" data-ng-click="sendEmail()">Send</md-button>
-						</div>
-		      		</md-card-content>
-		    	</md-card>
+<style>
+	#googleMap{
+		position: absolute; 
+		bottom: 0;
+		width:100%;
+		height:250px;
+	}
+	#contact_info_field{
+		margin-top: 100px;
+	}
+</style>
+<div>
+	<div class="container" id="contact_info_field">
+		<div align="center">
+			<div>
+				<h3>
+					<span>
+						<img src="img/contact/email.png" height="30px;">
+					</span> smartmongolian@gmail.com
+				</h3>
 			</div>
-    	</div>
+			<div>
+				<h3>
+					<span>
+						<img src="img/contact/phone.png" height="30px;">
+					</span> (+82)-10-9372-9007
+				</h3>
+			</div>
+			<div>
+				<h3>
+					<span>
+						<img src="img/contact/location.png" height="30px;">
+					</span> Seoul, South Korea
+				</h3>
+			</div>
+		</div>
 	</div>
+	<div id="googleMap"></div>	
 </div>
-<div id="googleMap" style="width:100%;height:200px;"></div>
+

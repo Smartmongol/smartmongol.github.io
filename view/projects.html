@@ -1,40 +1,65 @@
-<div>
-  	<md-content layout-md="column" layout-sm="column">
-	  	<md-tabs md-dynamic-height md-border-bottom>
-			<md-tab label="Nuuts Tovhcoo">
-				<div>
-					<h1>Nuuts Tovchoo</h1>
-					<img src="img/nuuts.jpg">	
-				</div>
-			</md-tab>
-			<md-tab label="Bair">
-				<div>
-					<h1>Bair</h1>
-					<img src="img/nuuts.jpg">	
-				</div>
-			</md-tab>
-			<md-tab label="Buuz">
-				<div>
-					<h1>Buuz</h1>
-					<img src="img/buuz.jpg">	
-				</div>
-			</md-tab>
-			<md-tab label="KRL">
-				<div>
-					<h1>KRL logistic</h1>
-					<div width="100%" height="100%">
-						<img src="img/krl.jpg" width="20%">		
-					</div>
-				</div>
-			</md-tab>
-			<md-tab label="English Card">
-				<h1>English Card</h1>
-				<img src="img/englishcard.jpg" width="100%">
-			</md-tab>
-			<md-tab label="Uranshuvuu">
-				<h1>Uranshuvuu</h1>
-				<img src="img/uran.jpg" width="100%">
-			</md-tab>
-		</md-tabs>
-	</md-content>
+<style>
+	#projects_page{
+		margin-top: 100px;
+		text-align: center;
+	}
+	#image_slide_field{
+		text-align: center;
+	}
+	.slide{
+		width: 100%;
+
+		-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	       -moz-animation: fadein 1s; /* Firefox < 16 */
+	        -ms-animation: fadein 1s; /* Internet Explorer */
+	         -o-animation: fadein 1s; /* Opera < 12.1 */
+	            animation: fadein 1s;
+	}
+
+	@keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Opera < 12.1 */
+	@-o-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+	#prev_slide{	
+		vertical-align: middle;
+	}
+	#next_slide{
+		vertical-align: middle;
+	}
+</style>
+
+<div id="projects_page" class="row">
+	<div class="col-xs-2 col-md-1" id="prev_slide" ng-click="prevSlide()">
+		<img width="80%" src="img/projects/prev.png">
+	</div>
+	<div class="col-xs-8 col-md-10" id="image_slide_field">
+		<img ng-repeat="image in images" ng-src="img/projects/{{image}}.jpg" class="slide" ng-hide="!isCurrentIndex($index)">
+	</div>
+	<div class="col-xs-2 col-md-1" id="next_slide" ng-click="nextSlide()">
+		<img width="80%" src="img/projects/next.png">
+	</div>
 </div>

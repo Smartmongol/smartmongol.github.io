@@ -1,4 +1,4 @@
-var app = angular.module('smartmongol', ['ui.router']);
+var app = angular.module('smartmongol', ['ui.router','ui.bootstrap']);
 app.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/home");
 	$stateProvider
