@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="smartmongol">
+<html ng-app="smartmongol" style="
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;" >
 <head>
 	<title>Smartmongol</title>
 
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_flatly.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/angular-typewrite.css">
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/angular-ui-router.min.js"></script>
 	<script src="lib/ui-bootstrap-tpls-1.3.2.min.js"></script>
+	<script src="lib/angular-typewrite.js"></script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
@@ -25,21 +31,22 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#/">Smartmongol</a>
+				<a class="navbar-brand" href="#/"><img src="img/smartmongol-logo.png" height="30px"></a>
 		    </div>
-		    <div collapse="isCollapsed" class="collapse navbar-collapse">
+		    <div collapse="isCollapsed" class="collapse navbar-collapse" ng-class="!isCollapsed && 'in'">
 		      <ul class="nav navbar-nav">
-		        <li><a href="#/team">Team</a></li>
-		        <li><a href="#projects">Projects</a></li>
-		        <li><a href="#/contact">Contact</a></li>
+		        <li><a href="#/team" ng-click="isCollapsed = !isCollapsed">Team</a></li>
+		        <li><a href="#projects" ng-click="isCollapsed = !isCollapsed">Projects</a></li>
+		        <li><a href="#/contact" ng-click="isCollapsed = !isCollapsed">Contact</a></li>
 		      </ul>
 		    </div>
 	  	</div>	
 	</nav>
 
-	<div style="margin-top: 60px; width: 100%; height: 100%;" ui-view></div>
+	<div style="width: 100%; height: 100%;" ui-view></div>
 
 	<script src="js/app.js"></script>
+	<script src="lib/typewrite-directive.js"></script>
 	<script src="js/navCtrl.js"></script>
 	<script src="js/homeCtrl.js"></script>
 	<script src="js/membersCtrl.js"></script>
